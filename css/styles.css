@@ -72,7 +72,7 @@ header img {
 	height: 100vh;
   background-color: #111;
   text-align: center;
-  font-size: calc(0.13vw + 3rem);
+  font-size: calc(0.5vw + 3rem);
   color: var(--headline-color);
 }
 
@@ -98,7 +98,7 @@ header img {
 }
 
 .post-title {
-	font-size: calc(0.13vw + 2rem);
+	font-size: calc(0.5vw + 2rem);
 	font-weight: 700;
 	line-height: 1.5;
 }
@@ -121,12 +121,13 @@ header img {
 }
 
 #post-button:hover {
+	letter-spacing: 2px ;
 	background-color: #ccc;
 	color: #111;
 }
 
 #post-button:active {
-	letter-spacing: 2px ;
+	letter-spacing: 4px ;
 }
 
 #post-button:after {
@@ -134,21 +135,42 @@ header img {
 }
 
 #about-me {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0 10%;
 	width: 100%;
-	height: 500px;
-	background-color: crimson;
+	height: 400px;
+	background-color: teal;
+  text-align: center;
+  color: var(--paragraph-color);
 }
 
 #projects {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0 25px;
 	width: 100%;
 	height: 500px;
-	background-color: teal;
+	background-color: #ccc;
+  text-align: center;
+  color: var(--paragraph-dark-color);
 }
 
 #contact {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0 25px;
 	width: 100%;
 	height: 500px;
-	background-color: greenyellow;
+	background-color: crimson;
+  text-align: center;
+  color: var(--paragraph-color);
 }
 
 @media (max-width:600px)  {	/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
