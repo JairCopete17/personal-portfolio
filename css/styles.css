@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 :root {
 	--bg-color: #f6f6f6;
@@ -22,7 +23,7 @@ html {
 body {
 	margin: 100px 0 0;
 	padding: 0;
-	font-family: 'Noto Sans';
+	font-family: 'Poppins', sans-serif;
 	background: var(--bg-color);
 }
 
@@ -36,7 +37,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-	background-color: var(--header-color);
+	background-color: black;
 	box-shadow: 0 0 25px 0 black;
 }
 
@@ -57,19 +58,84 @@ header li a {
 }
 
 header img {
-	height: 80px;
-	margin-left: 40px;
+	height: 65px;
+  width: 90px;
 }
 
 #welcome-section {
-  padding: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0 25px;
 	width: 100%;
 	height: 100vh;
+  background-color: #111;
+  text-align: center;
+  font-size: calc(0.13vw + 3rem);
+  color: var(--headline-color);
+}
+
+.personal {
+	margin: 25px;
+	padding: 5px 2px 1px;
+	text-decoration: none;
+}
+
+.personal > h1 {
+	margin: 0 auto 15px;
+}
+
+#personal-link {
+	text-decoration: none;
+}
+
+.post {
+	margin: 25px;
+	padding: 1.2rem;
+	max-width: 500px;
+	box-shadow: inset 0 0 0 4px #ccc, inset -4px -4px 0 6px #000;
+}
+
+.post-title {
+	font-size: calc(0.13vw + 2rem);
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+#post-button {
+	outline: none;
+	height: 40px;
+	width: 130px;
+	border: 2px solid #ccc;
+	border-radius: 40px;
+	background-color: #111;
+	letter-spacing: 1px;
+	text-align: center;
+  text-shadow: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #ccc;
+	cursor: pointer;
+	transition: all 0.25s ease;
+}
+
+#post-button:hover {
+	background-color: #ccc;
+	color: #111;
+}
+
+#post-button:active {
+	letter-spacing: 2px ;
+}
+
+#post-button:after {
+	content:"Blog";
 }
 
 #about-me {
 	width: 100%;
-	height: 500px;;
+	height: 500px;
 	background-color: crimson;
 }
 
@@ -96,9 +162,18 @@ header img {
   }
 
   header img {
-	  height: 64px;
-	  margin-left: 0px;
+	  height: 49px;
+  	width: 67px;
   }
+
+	#welcome-section {
+		flex-direction: column;
+    justify-content: space-around;
+	}
+
+	.personal, .post {
+		margin: 5px;
+	}
 }
 
 @media (min-width:768px)  {	/* tablet, landscape iPad, lo-res laptops ands desktops */
