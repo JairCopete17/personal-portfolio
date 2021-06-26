@@ -229,6 +229,54 @@ header img {
   color: var(--paragraph-color);
 }
 
+#contact-button {
+	outline: none;
+	height: 50px;
+	width: 200px;
+	border: 2px solid #ccc;
+	border-radius: 50px;
+	background-color: #111;
+	background-image: url(https://i1.wp.com/codemyui.com/wp-content/uploads/2016/11/pure-css-snow-animation.gif?fit=880%2C440&ssl=1);
+	letter-spacing: 1px;
+	text-align: center;
+	text-shadow: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #ccc;
+	cursor: pointer;
+	transition: all 0.25s ease;
+}
+
+#contact-button:hover {
+	letter-spacing: 2px ;
+}
+
+#contact-button:active {
+	letter-spacing: 4px ;
+}
+
+#contact-button:after {
+	content:"Let's talk";
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 25px;
+	width: 100%;
+	height: auto;
+  background-color: black;
+  text-align: center;
+	font-size: calc(0.5vw + 6px);
+  color: var(--paragraph-color);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--paragraph-color)
+}
+
 @media (max-width:600px)  {	/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 	body {
 		font-size: calc(0.14vw + 15px) !important;
@@ -272,6 +320,11 @@ header img {
   .card p {
 	  visibility: hidden;
   }
+
+	#contact {
+		flex-direction: column;
+    justify-content: space-around;
+	}
 }
 
 @media (min-width:768px)  {	/* tablet, landscape iPad, lo-res laptops ands desktops */
