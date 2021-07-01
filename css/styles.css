@@ -87,7 +87,7 @@ header img {
 	margin: 0 auto 15px;
 }
 
-#personal-link {
+.personal-link {
 	text-decoration: none;
 }
 
@@ -211,7 +211,7 @@ header img {
 	padding: 10px 0;
 }
 
-#profile-link {
+.profile-link {
 	text-decoration: none;
   color: #ffffff;
 }
